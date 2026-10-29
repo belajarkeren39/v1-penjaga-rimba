@@ -1,0 +1,21 @@
+PANDUAN MENJALANKAN DI PAPAN INTERAKTIF (IFP)
+
+1. JANGAN buka dengan klik dua kali index.html (alamat file://). Banyak browser IFP
+   memblokir kamera dan model sensor di mode itu. Gunakan alamat https://, misalnya
+   GitHub Pages: https://NAMAAKUN.github.io/penjaga-rimba/
+2. Gunakan Chrome atau Edge terbaru; izinkan kamera saat diminta.
+3. (Disarankan) Jalankan "python unduh_model.py" sekali di komputer ber-internet,
+   lalu unggah ulang folder aset/vendor dan aset/model. Game akan memuat sensor
+   dari lokal (cepat, tanpa internet), dan otomatis memakai CDN bila berkas lokal tidak ada.
+4. Bila kamera IFP berupa kamera USB eksternal, pastikan terpasang sebelum membuka game.
+5. Bila masih berat: pilih Mode Duduk, tutup aplikasi lain, dan pastikan resolusi layar IFP
+   tidak melebihi 4K. Game sekarang otomatis menurunkan beban deteksi sesuai kemampuan perangkat.
+
+PERUBAHAN PERFORMA
+- Kamera 640x360 (sebelumnya 1280x720); fallback bertahap bila kamera menolak.
+- Deteksi tangan adaptif (jeda menyesuaikan kecepatan perangkat), GPU -> CPU otomatis.
+- Jumlah tangan 2 (4 hanya pada Duel 2P).
+- Kanvas overlay dibatasi 1280 px dan tidak digambar saat tidak ada tangan.
+- Efek blur (backdrop-filter) di atas video dimatikan.
+- Loop game dibatasi ~30 fps; gambar dikompres ke WebP (7 MB -> 0,6 MB).
+- Perbaikan bug: titik pusat telapak tangan sumbu Y memakai nilai X (lm[12].x), kini lm[12].y.

@@ -1,0 +1,35 @@
+PENJAGA RIMBA — EDISI ANIME 2D
+
+CARA MEMBUKA
+1. Ekstrak seluruh isi ZIP terlebih dahulu.
+2. Buka folder Penjaga_Rimba_Anime.
+3. Klik dua kali index.html menggunakan Chrome atau Edge.
+4. Gunakan Layar Penuh untuk tampilan terbesar. Rasio game tetap 16:9.
+
+ISI PAKET
+index.html                 Halaman game
+aset/gambar/raka-rimba.png  Ilustrasi Raka dengan transparansi
+aset/gambar/sir-arka.png    Ilustrasi Arka dengan transparansi
+aset/gambar/hutan-anime.png Latar hutan anime
+aset/css/game.css          Tata letak game
+aset/css/animasi.css        Animasi karakter, kunang-kunang, dan daun
+aset/js/game.js            Permainan dan bank 75 soal
+aset/js/animasi.js         Interaksi karakter dan kontrol animasi
+PROMPT_ASET.json            Prompt ilustrasi; dibuat dengan image_gen bawaan
+
+ANIMASI
+Karakter bergerak lembut saat diam, menanggapi sorotan, dan melompat kecil
+saat diklik. Klik Raka atau Arka untuk melihat sapaan. Tombol Animasi
+Aktif/Jeda menghentikan atau menjalankan gerakan pada cover. Preferensi
+kurangi gerakan pada perangkat juga dihormati. PNG adalah gambar sumber;
+animasi dijalankan oleh CSS/JavaScript di dalam game, bukan video/GIF.
+
+KONTROL
+Klik/sentuh gelembung atau gunakan Q/W/A/S (P1), I/O/K/L (P2).
+Grafik, musik sintetis, dan kontrol manual bekerja tanpa internet.
+Pelacakan telapak tangan memerlukan kamera, izin browser, dan internet
+untuk memuat model MediaPipe. Jika kamera tidak tersedia, lewati latihan
+untuk memakai klik/sentuh/keyboard.
+
+Jangan pindahkan index.html sendirian. Folder aset harus tetap berada
+bersamanya agar gambar, animasi, dan permainan dapat dimuat.
